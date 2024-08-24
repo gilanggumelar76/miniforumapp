@@ -1,0 +1,14 @@
+### LOGIN USER
+POST http://localhost:1500/login
+Content-Type: application/json
+
+{
+    "username": "gilanggantengmax",
+    "password": "valid99max"
+}
+
+### GET RESOURCES
+GET http://localhost:1500/resources
+
+### LOGOUT USER
+POST http://localhost:1500/logout

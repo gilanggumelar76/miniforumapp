@@ -1,0 +1,25 @@
+### GET ALL THREAD
+GET http://localhost:3000/threads
+
+### CREATE NEW THREAD
+POST http://localhost:3000/threads
+Content-Type: application/json
+
+{
+    "title": "Tes",
+    "content": "AAAAAAA Agak susah",
+    "replyId": "belum ada di database"
+}
+
+### UPDATE THREAD
+PATCH  http://localhost:3000/threads/66ba05b58ee9e146a2f543ec
+Content-Type: application/json
+
+{
+    "title": "I LOVE YOU AYUMI",
+    "content": "Oh I FIND her, SHE is so cute :3",
+    "replyId": "66ba0e903547b554a91e52e3t"
+}
+
+### DELETE THREAD
+DELETE  http://localhost:3000/threads/66ba117752e27a2ccc871a9b

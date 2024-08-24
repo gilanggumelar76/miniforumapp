@@ -1,0 +1,22 @@
+### GET ALL REPLY
+GET http://localhost:3000/replys
+
+### CREATE REPLY
+POST http://localhost:3000/replys
+Content-Type: application/json
+
+{
+    "content": "I love you too :3",
+    "usernameId": "66b9fd3518f5138be1e5b374"
+}
+
+### UPDATE REPLY
+PATCH  http://localhost:3000/replys/66ba0c6b7c02cc169c37134a
+Content-Type: application/json
+
+{
+    "content": "I love you too :3 again"
+}
+
+### DELETE REPLY
+DELETE  http://localhost:3000/replys/66ba0c9f7c02cc169c37134d

@@ -1,0 +1,26 @@
+### GET ALL USERS
+GET http://localhost:3000/users
+
+### CREATE NEW USER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "GilangGumelar",
+    "password": "pastiaman",
+    "email": "gilanggumelarrr@oke.com",
+    "threadId": "belum ada thread"
+}
+
+### DELETE USER
+DELETE http://localhost:3000/users/66ba115c52e27a2ccc871a99
+
+### UPDATE USER
+PATCH  http://localhost:3000/users/66b97fb51d165c582c0f03da
+Content-Type: application/json
+
+{
+    "username": "test",
+    "email": "test",
+    "threadId": "sudah"
+}
